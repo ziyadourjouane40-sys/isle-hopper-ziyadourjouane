@@ -1,2 +1,58 @@
-# isle-hopper-ziyadourjouane
-Isle Hopper is a fun 3D adventure game where you jump between floating islands and collect gems. Built with Python. This website is the landing page for the game, including description and download link.
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Isle Hopper — Tic‑Tac‑Toe</title>
+  <meta name="description" content="Play Tic‑Tac‑Toe in your browser — Easy, Medium and Hard AI modes (minimax)." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1>Tic-Tac-Toe</h1>
+    <div id="status">Player X's turn</div>
+
+    <div id="board" role="grid" aria-label="Tic Tac Toe board">
+      <button class="cell" data-index="0"></button>
+      <button class="cell" data-index="1"></button>
+      <button class="cell" data-index="2"></button>
+      <button class="cell" data-index="3"></button>
+      <button class="cell" data-index="4"></button>
+      <button class="cell" data-index="5"></button>
+      <button class="cell" data-index="6"></button>
+      <button class="cell" data-index="7"></button>
+      <button class="cell" data-index="8"></button>
+    </div>
+
+    <div class="controls">
+      <div class="left-controls">
+        <button id="reset">Reset</button>
+        <label class="ai-label">
+          <input id="aiToggle" type="checkbox" />
+          Play vs AI
+        </label>
+      </div>
+
+      <div class="middle-controls">
+        <button id="download" class="download-btn" title="Download this page as HTML">Download Game</button>
+        <button id="downloadImage" class="download-btn" title="Download a PNG snapshot of the board">Download Board Image</button>
+      </div>
+
+      <div class="right-controls">
+        <label for="difficulty">Mode</label>
+        <select id="difficulty" aria-label="AI difficulty">
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+      </div>
+    </div>
+
+    <footer>
+      <small>Isle Hopper — Tic‑Tac‑Toe (Easy / Medium / Hard)</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
